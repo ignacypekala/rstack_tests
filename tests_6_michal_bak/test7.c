@@ -12347,6 +12347,6 @@ int main(void) {
     rstack_delete(rs7);
     rstack_delete(rs8);
     rstack_delete(rs9);
-
-    return PASS;
+        
+        return PASS;
 }

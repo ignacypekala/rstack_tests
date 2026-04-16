@@ -13205,6 +13205,6 @@ int main(void) {
     rstack_delete(rs17);
     rstack_delete(rs18);
     rstack_delete(rs19);
-
-    return PASS;
+        
+        return PASS;
 }

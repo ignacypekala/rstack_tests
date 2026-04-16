@@ -27003,6 +27003,6 @@ int main(void) {
     rstack_delete(rs247);
     rstack_delete(rs248);
     rstack_delete(rs249);
-
-    return PASS;
+        
+        return PASS;
 }

@@ -12103,6 +12103,6 @@ int main(void) {
     rstack_delete(rs147);
     rstack_delete(rs148);
     rstack_delete(rs149);
-
-    return PASS;
+        
+        return PASS;
 }

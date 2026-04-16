@@ -1528,6 +1528,6 @@ int main(void) {
     rstack_delete(rs22);
     rstack_delete(rs23);
     rstack_delete(rs24);
-
-    return PASS;
+        
+        return PASS;
 }

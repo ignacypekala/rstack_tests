@@ -12943,6 +12943,6 @@ int main(void) {
     rstack_delete(rs37);
     rstack_delete(rs38);
     rstack_delete(rs39);
-
-    return PASS;
+        
+        return PASS;
 }

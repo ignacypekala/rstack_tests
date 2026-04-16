@@ -13,8 +13,11 @@ test_%_executable: test_%.o librstack.so
 	$(CC) $^ -o $@ -L . -lrstack
 ```
 3. Zachęcam do uwzględnienia następujących plików w celu `clean` oraz
-   pliku `.gitignore` `test_*.fout test_*_executable test_*.o test.fout
-test.diff test.stdout test.valgrind test.make`
+   pliku `.gitignore`:
+```
+test_*.fout test_*_executable test_*.o test.fout
+test.diff test.stdout test.valgrind test.make
+```
 
 > Zamiast kroku pierwszego można sklonować repozytorium i zlinkować pliki
 > programem gnu stow
@@ -36,7 +39,7 @@ Aby uruchomić pojedyńczy test:
 ```
 ./test.sh NAZWAPACZKI NAZWATESTU (NAZWAPRZYPADKU)
 ```
-> Nazwy przypadku nie podajemy żeby skorzystać z domyślnego przypadku
+> Żeby skorzystać z domyślnego przypadku nie trzeciego argumentu.
 
 Na początku skryptów `test.sh` i `test-batch.sh` znajdują się proste ustawienia
 które można nadpisać.

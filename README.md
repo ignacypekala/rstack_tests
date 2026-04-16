@@ -42,7 +42,7 @@ Aby uruchomić pojedyńczy test:
 ```
 ./test.sh NAZWAPACZKI NAZWATESTU (NAZWAPRZYPADKU)
 ```
-> Żeby skorzystać z domyślnego przypadku nie trzeciego argumentu.
+> Żeby skorzystać z domyślnego przypadku należy nie podawać trzeciego argumentu.
 
 Na początku skryptów `test.sh` i `test-batch.sh` znajdują się proste ustawienia
 które można nadpisać.

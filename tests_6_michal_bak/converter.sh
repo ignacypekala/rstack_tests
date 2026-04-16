@@ -8,7 +8,7 @@ for file in ./output/test*_*.model.out; do
 done
 
 rmdir output
-rm tester.sh
+rm tester.c
 rm rstack.h
 
 for cfile in ./test*.c; do

@@ -1,7 +1,9 @@
 # Testerka do librstack.so
+![podgląd](./preview.png)
 
 ## Instalacja:
-1. Wszystkie pliki (można bez tego readme) w korzeniu swojego projektu
+1. Wszystkie pliki umieść w korzeniu swojego projektu
+> Oczywiście można pominąć README.md oraz preview.png
 2. Do swojego makefile'a dopisz następujące cele
 ```
 TEST_BATCH ?= test
@@ -12,21 +14,22 @@ test_%_executable: test_%.o librstack.so
 ```
 3. Zachęcam do uwzględnienia następujących plików w celu `clean` oraz
    pliku `.gitignore` `test_*.fout test_*_executable test_*.o test.fout
-test.diff test.stdout test.valgrind test.make test.stderr`
+test.diff test.stdout test.valgrind test.make`
 
 > Zamiast kroku pierwszego można sklonować repozytorium i zlinkować pliki
-> programem gnu stow (komenda: `stow ŚCIEŻKA_DO_TESTOW -t ŚCIEŻKA_DO_PROJEKTU`)
-> Następnie w celu test_%.o należy dopisać "-I ŚCIEŻKA_DO_TESTÓW".
+> programem gnu stow
+> (komenda: `stow ŚCIEŻKA_DO_TESTOW -t ŚCIEŻKA_DO_PROJEKTU`)
+> Następnie w celu `test_%.o` należy dopisać "-I ŚCIEŻKA_DO_TESTÓW/jakiś_folder").
 
 # Użycie
 Aby uruchomić wszystkie testy:
 ```
-./tests-all.sh
+./test-all.sh
 ```
 
 Aby uruchomić wszystkie testy z packi:
 ```
-./tests-batch.sh NAZWAPACZKI
+./test-batch.sh NAZWAPACZKI
 ```
 
 Aby uruchomić pojedyńczy test:

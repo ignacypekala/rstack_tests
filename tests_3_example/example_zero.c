@@ -7,7 +7,7 @@ int main(void) {
 
   ASSERT(rstack_empty(rs0) == true);
   ASSERT_RESULT(rstack_front(rs0), false, 0);
-  NO_ERROR(rstack_write("file_zero.out", rs0));
+  NO_ERROR(rstack_write(OUTPUT_FILE, rs0));
   rstack_delete(rs0);
 
   return PASS;

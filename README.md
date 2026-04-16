@@ -59,7 +59,7 @@ albo jeden domyślny przypadek w tym samym folderze co kod źródłowy. W takiej
 sytuacji nazwą przypadku jest nazwa testu.
 
 ## Przypadki
-Każdy przypadek może mieć jeden z plików
+Każdy przypadek może mieć po jednym z plików
 - `NAZWAPRZYPADKU.args` - argumenty wywoływania programu
 - `NAZWAPRZYPADKU.in` - tekst do wpisania na wejście standardowe
 - `NAZWAPRZYPADKU.stdout` - tekst do porównania wyjścia standardowego

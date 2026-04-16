@@ -8,10 +8,13 @@
 ```
 TEST_BATCH ?= test
 test_%.o: ./tests_$(TEST_BATCH)/%.c macros.h
-	$(CC) tests -c $< -o $@ $(CFLAGS)
+	gcc tests -c $< -o $@ $(CFLAGS)
 test_%_executable: test_%.o librstack.so
-	$(CC) $^ -o $@ -L . -lrstack
+	gcc $^ -o $@ -L . -lrstack
 ```
+> W zmiennej CFLAGS powinny się znajdować flagi to kompilacji programu
+> (przynajmniej -std=gnu23))
+
 3. Zachęcam do uwzględnienia następujących plików w celu `clean` oraz
    pliku `.gitignore`:
 ```

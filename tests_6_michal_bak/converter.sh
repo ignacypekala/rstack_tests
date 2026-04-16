@@ -3,6 +3,15 @@ for file in ./output/test*_*.model.out; do
     testname=${filename%_*.model.out}
     casename=${filename#${testname}_}
     casename=${casename%.model.out}
-    mkdir $testname
-    mv "$file" "./$testname/${testname}_${casename}.fout"
+    mkdir $testname 2>/dev/null
+    mv "$file" "./$testname/${testname}_${casename}.fout" 
 done
+
+rmdir output
+rm tester.sh
+rm rstack.h
+
+for cfile in ./test*.c; do
+    nvim -s macro.txt $cfile
+done
+

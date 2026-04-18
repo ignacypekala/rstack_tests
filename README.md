@@ -8,7 +8,7 @@
 ```
 TEST_BATCH ?= test
 test_%.o: ./tests_$(TEST_BATCH)/%.c macros.h
-	gcc tests -c $< -o $@ $(CFLAGS)
+	gcc -c $< -o $@ $(CFLAGS)
 test_%_executable: test_%.o librstack.so
 	gcc $^ -o $@ -L . -lrstack
 ```

@@ -48,8 +48,9 @@ Na początku skryptów `test.sh` i `test-batch.sh` znajdują się proste ustawie
 które można nadpisać.
 
 
-## Testy
-Każdy test jest reprezentowany przez osobnym programem w C i znajduje się w pliku:
+## Struktura testów
+### Test
+Każdy test jest reprezentowany przez osobny program w C w pliku:
 ```
 tests_NAZWAPACZKI/NAZWATESTU.c.
 ```
@@ -61,7 +62,7 @@ tests_NAZWAPACZKI/NAZWATESTU/
 albo jeden domyślny przypadek w tym samym folderze co kod źródłowy. W takiej
 sytuacji nazwą przypadku jest nazwa testu.
 
-## Przypadki
+### Przypadek
 Każdy przypadek może mieć po jednym z plików
 - `NAZWAPRZYPADKU.args` - argumenty wywoływania programu
 - `NAZWAPRZYPADKU.in` - tekst do wpisania na wejście standardowe

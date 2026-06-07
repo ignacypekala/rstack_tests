@@ -57,8 +57,7 @@ Ponadto przypadek może także generować dowolną liczbę nazwanych plików wyn
 # Autorzy testów
 - tests_michal_bak - Michał Bąk
 - tests_example - testy dołączone do treści zadania
-
-Pozostałe testy zostały napisane przeze mnie - Ignacego Pękałę.
+- pozostałe - Ignacy Pękała
 
 # Contributing
 Zachęcam do dzielenia się swoimi testami oraz zgłaszania wszelkich usterek.
